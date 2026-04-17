@@ -1,0 +1,44 @@
+name: dotnet-ci
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Restore Local Tools
+        run: dotnet tool restore
+
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Install Playwright Browsers
+        run: dotnet tool run playwright install --with-deps chromium firefox
+
+      - name: Test
+        run: dotnet test --no-build --configuration Release
+
+      - name: Upload UI Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-test-artifacts
+          path: |
+            tests/Pointr.Ui.Tests/bin/**/net8.0/artifacts
+            tests/Pointr.Ui.Tests/Report
+          if-no-files-found: ignore
