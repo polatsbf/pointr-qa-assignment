@@ -40,5 +40,6 @@ jobs:
           name: ui-test-artifacts
           path: |
             tests/Pointr.Ui.Tests/bin/**/net8.0/artifacts
+            tests/Pointr.Ui.Tests/Output
             tests/Pointr.Ui.Tests/Report
           if-no-files-found: ignore

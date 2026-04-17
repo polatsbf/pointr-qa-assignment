@@ -138,7 +138,7 @@ Both UI requirements run in:
 
 The UI test writes the top 5 repeated words from the latest 3 blog articles into:
 
-- `tests/Pointr.Ui.Tests/bin/Debug/net8.0/artifacts/latest-3-articles-top-5-words.txt`
+- `tests/Pointr.Ui.Tests/Output/latest-3-articles-top-5-words.txt`
 
 The UI test run also generates an ExtentReports HTML report:
 
