@@ -8,7 +8,7 @@ public static class BrowserUtility
     {
         var options = new BrowserTypeLaunchOptions
         {
-            Headless = false
+            Headless = !IsHeadedModeEnabled()
         };
 
         return browserName switch
@@ -17,5 +17,13 @@ public static class BrowserUtility
             "firefox" => await playwright.Firefox.LaunchAsync(options),
             _ => throw new ArgumentOutOfRangeException(nameof(browserName), browserName, "Unsupported browser.")
         };
+    }
+
+    private static bool IsHeadedModeEnabled()
+    {
+        return string.Equals(
+            Environment.GetEnvironmentVariable("HEADED"),
+            "true",
+            StringComparison.OrdinalIgnoreCase);
     }
 }
