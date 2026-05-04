@@ -4,6 +4,7 @@ using Pointr.Api.Contracts;
 
 namespace Pointr.Api.Tests;
 
+/// <summary>Site API için pozitif ve negatif integration testlerini içerir.</summary>
 public sealed class SitesApiTests(CustomWebApplicationFactory factory) : IClassFixture<CustomWebApplicationFactory>
 {
     private readonly HttpClient _client = factory.CreateClient();

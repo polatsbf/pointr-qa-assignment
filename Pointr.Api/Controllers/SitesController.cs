@@ -5,6 +5,7 @@ using Pointr.Api.Infrastructure;
 
 namespace Pointr.Api.Controllers;
 
+/// <summary>Site oluşturma, getirme ve silme endpointlerini yönetir.</summary>
 [ApiController]
 [Route("api/sites")]
 public sealed class SitesController(ISiteRepository repository) : ControllerBase

@@ -3,6 +3,7 @@ using Pointr.Api.Domain;
 
 namespace Pointr.Api.Infrastructure;
 
+/// <summary>Gerçek database yerine site, building ve level verilerini memory içinde tutar.</summary>
 public sealed class InMemorySiteRepository : ISiteRepository
 {
     private readonly ConcurrentDictionary<Guid, Site> _sites = new();

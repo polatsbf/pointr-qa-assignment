@@ -3,6 +3,7 @@ using AventStack.ExtentReports.Reporter;
 
 namespace Pointr.Ui.Tests.Support;
 
+/// <summary>UI testleri için Extent HTML report oluşturur ve senaryo sonuçlarını rapora yazar.</summary>
 public static class ExtentReportManager
 {
     private static readonly object SyncRoot = new();

@@ -5,6 +5,7 @@ using Pointr.Api.Infrastructure;
 
 namespace Pointr.Api.Controllers;
 
+/// <summary>Site altındaki building oluşturma, getirme ve silme endpointlerini yönetir.</summary>
 [ApiController]
 [Route("api/sites/{siteId:guid}/buildings")]
 public sealed class BuildingsController(ISiteRepository repository) : ControllerBase

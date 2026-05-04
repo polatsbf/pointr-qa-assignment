@@ -2,6 +2,7 @@ using Pointr.Api.Domain;
 
 namespace Pointr.Api.Infrastructure;
 
+/// <summary>Site, building ve level verilerine erişim için repository contract'ını tanımlar.</summary>
 public interface ISiteRepository
 {
     Site Add(Site site);

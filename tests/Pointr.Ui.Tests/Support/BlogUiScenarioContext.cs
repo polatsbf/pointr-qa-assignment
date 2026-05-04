@@ -3,6 +3,7 @@ using Pointr.Ui.Tests.Pages;
 
 namespace Pointr.Ui.Tests.Support;
 
+/// <summary>UI test senaryosu boyunca browser, page, article ve word result bilgisini taşır.</summary>
 public sealed class BlogUiScenarioContext
 {
     public string BrowserName { get; set; } = string.Empty;

@@ -1,5 +1,6 @@
 namespace Pointr.Ui.Tests.Support;
 
+/// <summary>Top 5 word sonuçlarını test projesindeki Output klasörüne txt dosyası olarak yazar.</summary>
 public static class FileUtility
 {
     public static async Task WriteTopWordsReportAsync(string browserName, string content)

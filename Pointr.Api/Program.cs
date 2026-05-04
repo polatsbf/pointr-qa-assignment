@@ -11,4 +11,5 @@ app.MapControllers();
 
 app.Run();
 
+/// <summary>Integration testlerin WebApplicationFactory ile API'yi başlatabilmesi için açılan partial Program class'ıdır.</summary>
 public partial class Program;

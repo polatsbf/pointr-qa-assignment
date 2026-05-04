@@ -6,6 +6,7 @@ using Xunit;
 
 namespace Pointr.Ui.Tests.Steps;
 
+/// <summary>Blog analysis feature dosyasındaki Gherkin steplerinin C# karşılıklarını içerir.</summary>
 [Binding]
 public sealed class BlogAnalysisSteps(BlogUiScenarioContext context)
 {

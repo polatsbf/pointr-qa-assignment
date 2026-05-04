@@ -4,6 +4,7 @@ using Pointr.Api.Contracts;
 
 namespace Pointr.Api.Tests;
 
+/// <summary>Level API için tekli ve toplu import testlerini içerir.</summary>
 public sealed class LevelsApiTests(CustomWebApplicationFactory factory) : IClassFixture<CustomWebApplicationFactory>
 {
     private readonly HttpClient _client = factory.CreateClient();

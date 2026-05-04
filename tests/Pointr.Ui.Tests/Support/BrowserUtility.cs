@@ -2,6 +2,7 @@ using Microsoft.Playwright;
 
 namespace Pointr.Ui.Tests.Support;
 
+/// <summary>Playwright browser launch ayarlarını ve headless/headed mode seçimini yönetir.</summary>
 public static class BrowserUtility
 {
     public static async Task<IBrowser> LaunchAsync(IPlaywright playwright, string browserName)

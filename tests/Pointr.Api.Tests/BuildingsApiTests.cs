@@ -4,6 +4,7 @@ using Pointr.Api.Contracts;
 
 namespace Pointr.Api.Tests;
 
+/// <summary>Building API için create, retrieve, delete ve validation testlerini içerir.</summary>
 public sealed class BuildingsApiTests(CustomWebApplicationFactory factory) : IClassFixture<CustomWebApplicationFactory>
 {
     private readonly HttpClient _client = factory.CreateClient();

@@ -2,6 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace Pointr.Ui.Tests.Support;
 
+/// <summary>Article textlerinden kelime frekanslarını hesaplar ve en çok tekrar eden kelimeleri formatlar.</summary>
 internal static partial class WordFrequencyAnalyzer
 {
     private static readonly HashSet<string> StopWords =

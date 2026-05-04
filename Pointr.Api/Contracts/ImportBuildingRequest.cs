@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Pointr.Api.Contracts;
 
+/// <summary>Yeni building import isteğinde gelen request body modelidir.</summary>
 public sealed class ImportBuildingRequest
 {
     [Required]

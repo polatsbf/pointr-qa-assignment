@@ -5,6 +5,7 @@ using Pointr.Api.Infrastructure;
 
 namespace Pointr.Api.Controllers;
 
+/// <summary>Building altındaki tekli ve toplu level import endpointlerini yönetir.</summary>
 [ApiController]
 [Route("api/buildings/{buildingId:guid}/levels")]
 public sealed class LevelsController(ISiteRepository repository) : ControllerBase

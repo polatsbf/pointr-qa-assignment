@@ -2,6 +2,7 @@ using Microsoft.Playwright;
 
 namespace Pointr.Ui.Tests.Pages;
 
+/// <summary>Blog sayfasındaki locator'ları ve page interaction methodlarını tutar.</summary>
 public sealed class BlogPage(IPage page)
 {
     private const string BlogUrl = "https://www.pointr.tech/blog";

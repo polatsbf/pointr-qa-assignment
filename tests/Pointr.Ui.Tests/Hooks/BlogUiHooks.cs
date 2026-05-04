@@ -3,6 +3,7 @@ using Reqnroll;
 
 namespace Pointr.Ui.Tests.Hooks;
 
+/// <summary>UI senaryoları sonrası report ve browser cleanup işlemlerini yönetir.</summary>
 [Binding]
 public sealed class BlogUiHooks(BlogUiScenarioContext context, ScenarioContext scenarioContext)
 {

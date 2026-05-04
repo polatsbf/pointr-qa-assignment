@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Pointr.Api.Contracts;
 
+/// <summary>Tek level import isteğinde gelen request body modelidir.</summary>
 public sealed class ImportLevelRequest
 {
     [Required]
